@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonRecursiveFunctionalGrammarParser", "NonRecursiveFunctionalGrammarParser.csproj", "{B9230DF0-69C1-448A-BCC4-ADB740C44B16}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{7E95F1FF-34D5-49A2-8DCE-63FFA52B46CA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0AC1DBE6-874C-42DC-9B66-E0FDB2AD6A24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NonRecursiveFunctionalGrammarParser", "src\NonRecursiveFunctionalGrammarParser\NonRecursiveFunctionalGrammarParser.csproj", "{BFD04F9F-5787-4E3E-A3E7-116BF04059B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{321199FB-AED4-47D0-AA4B-0B6D290D00CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "tests\Tests\Tests.csproj", "{D7854836-F4B5-4239-B166-12CB78E0EA21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grammars", "grammars", "{815C8337-F91B-4DDA-9232-AFD7A2995B09}"
+	ProjectSection(SolutionItems) = preProject
+		grammars\ansi.txt = grammars\ansi.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +31,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B9230DF0-69C1-448A-BCC4-ADB740C44B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9230DF0-69C1-448A-BCC4-ADB740C44B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9230DF0-69C1-448A-BCC4-ADB740C44B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9230DF0-69C1-448A-BCC4-ADB740C44B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD04F9F-5787-4E3E-A3E7-116BF04059B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD04F9F-5787-4E3E-A3E7-116BF04059B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD04F9F-5787-4E3E-A3E7-116BF04059B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD04F9F-5787-4E3E-A3E7-116BF04059B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7854836-F4B5-4239-B166-12CB78E0EA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7854836-F4B5-4239-B166-12CB78E0EA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7854836-F4B5-4239-B166-12CB78E0EA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7854836-F4B5-4239-B166-12CB78E0EA21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BFD04F9F-5787-4E3E-A3E7-116BF04059B5} = {0AC1DBE6-874C-42DC-9B66-E0FDB2AD6A24}
+		{D7854836-F4B5-4239-B166-12CB78E0EA21} = {321199FB-AED4-47D0-AA4B-0B6D290D00CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BCD0418-B79C-4A2A-AE27-4099D6E293A8}

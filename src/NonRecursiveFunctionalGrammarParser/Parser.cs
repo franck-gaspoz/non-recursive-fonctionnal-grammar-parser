@@ -3,7 +3,7 @@ namespace NonRecursiveFunctionalGrammarParser;
 /// <summary>
 /// The non recursive function grammar parser.
 /// </summary>
-public sealed class NonRecursiveFunctionGrammarParser
+public sealed class Parser
 {
     #region predefined grammar functions
 
@@ -49,7 +49,7 @@ public sealed class NonRecursiveFunctionGrammarParser
     /// Initializes a new instance of the <see cref="NonRecursiveFunctionGrammarParser"/> class.
     /// </summary>
     /// <param name="grammarDefinition">The grammar definition.</param>
-    public NonRecursiveFunctionGrammarParser(
+    public Parser(
         IEnumerable<string> grammarDefinition)
     {
         var rules = new List<string>();
